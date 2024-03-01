@@ -128,6 +128,7 @@ p > a.linkexterno {
     font-weight: bolder; 
     padding: 2px;
     text-decoration: none;
+    text-shadow: var(--box-shadow-padrão-texto);
 }
 
 .linkexterno:hover {
@@ -186,7 +187,7 @@ aside > p {
     color: black;
     font-family: var(--font-padrao);
     text-indent: 2em;
-    padding-bottom: 20px;
+    padding: 10px 0px;
     line-height: 2em;
 }
 
