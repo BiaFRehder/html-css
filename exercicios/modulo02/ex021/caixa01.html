@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            background-color: lightcoral;
+            text-align: center;
+            height: 200px;
+            width: 400px;
+
+            border: 15px dotted crimson;
+        
+            padding: 10px;
+
+            margin: 40px auto 40px auto;
+            /* Nesse caso, ou usa a margin: auto, ou usa os parâmetros determinados */
+
+            outline: 6px double darkred;
+            /* Para border, padding, margin e outline de h1, usamos o shorthand */
+        }
+
+        a {
+            display: block;
+            height: auto;
+            width: 600px;
+
+            color: peru;
+            border-width: 5px;
+            border-style: solid;
+            border-color: darkorange;
+
+            padding-top: 8px;
+            padding-right: 5px;
+            padding-bottom: 8px;
+            padding-left: 5px;
+        }
+
+        p {
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

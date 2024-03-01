@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #505B61ad;
+    margin: 0px;
+
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    /* border-radius com um valor padrão. Esse caso é um shorthand */
+}
+
+header> h1 {
+    background-color: #E09A69;
+    text-align: center;
+    width: 600px;
+    padding: 5px;
+    margin: 20px auto 20px auto;
+    box-shadow: 3px 3px 5px 0px #442f2159;
+    /* Após fazer a declaração do box-shadow e colocar os parâmetros aleatórios, o dev tools do chrome permite visualizar os parâmetros. Depois basta copiar e colar. OBS.: A ordem de parâmetros é: hosrizontal, vertical, embaçamento, espalhamento e cor */
+}
+
+nav {
+    background-color: #E0BD69;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #3d331c5e;
+    /* Nesse box-shadow foi tudo digitado */
+}
+
+nav > a {
+    color: #7a5439;
+    text-decoration: none;
+    margin: 5px 20px 5px 20px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: #ac8e4a;
+}
+
+main {
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px 20px 30px 40px; 
+    /* border-radius é o shorthand, há também border-top-right-radius */
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.397);
+}
+
+article {
+    background-color: #a6c9df;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px 20px;
+}
+
+article > aside {
+    background-color: #69B3E0;
+    text-align: end;
+    padding: 5px;
+}
+
+aside > p {
+    margin: 0px;
+}
+
+footer {
+    color: white;
+    background-color: #505B61;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+div#bola {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}

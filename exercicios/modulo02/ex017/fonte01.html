@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: justify;
+            /* 
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            
+            Padrão: 16px geralmente = 1em
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            /* weight = peso (lighter normal bold bolder) */
+            /*
+            shorthand font: é uma propriedade (mãozinha) que condensa todas as configurações em uma única declaração
+            Seguindo a ordem de declaração: 
+            font-style -> font-weight -> font-size -> font-family
+
+            O que antes seria: 
+                font-family: 'Work Sans', sans-serif;
+                font-weight: border;
+                font-size: 3em;
+                font-style: italic;
+
+            Ficará: */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2{
+            font: bold 2em 'Work Sans', sans-serif;
+        }
+
+    </style>
+    <!-- Nas font-family, aparecem o nome da fonte e mais algumas fontes "parecidas", são as Fonts Combinations (Busque em CSS web safe font combinations). Por exemplo 'Courier New', Courier, monospace. Pois se não estiver a fonte Courier New, ele pega outra parecida, Courier, se não, tenta a monospace. Nesse caso, monospace, onde o site for aberto, o PC vai procurar uma fonte que seja monoespaçada -->
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et accusamus velit eveniet ullam rem repellat veniam odio a animi quam quas, architecto quidem quasi placeat quibusdam exercitationem molestiae non similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis eius numquam optio voluptatibus aspernatur repellat cum! A repellat maiores excepturi quasi dolore alias quas sapiente dolorum, ex optio ipsam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error consectetur non deleniti eveniet quas labore rem quisquam quo! Quisquam doloremque nesciunt, libero architecto esse a exercitationem ipsum distinctio! Eaque, ea!</p>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum laudantium quo delectus sint facere nam vel, tenetur neque adipisci iure odit alias reiciendis aliquid culpa animi, minus laborum omnis saepe?</p>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum laudantium quo delectus sint facere nam vel, tenetur neque adipisci iure odit alias reiciendis aliquid culpa animi, minus laborum omnis saepe?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima minus accusamus unde odit corrupti aspernatur saepe odio est et eveniet dolorem, consequuntur suscipit blanditiis placeat, quo iure dolores sit? Aliquam.</p>
+</body>
+</html>

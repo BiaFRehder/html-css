@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --font-sec: 'Alata', sans-serif;
+    --font-padrao: 'Josefin Sans', sans-serif;
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-Gray: hsl(0, 0%, 55%);
+    --very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-padrao);
+    margin: 0px;
+}
+
+header {
+    display: block;
+    background-image: url(imagens/hero.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 60px 50px;
+    height: 100vh;
+}
+
+.menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-open {
+    display: none;
+}
+
+
+header > img {
+    background-color: var(--dark-Gray);
+    padding-top: 40px;
+}
+
+header .menu > a {
+    display: inline-block;
+    padding: 0px 5px;
+    transition: all 0.5s ease-in;
+}
+
+header .menu > a:hover {
+    color: var(--dark-Gray);
+    transform: scale(1.04) rotate(360deg);
+    
+}
+
+header h1 {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 4em;
+    line-height: 1.5em;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    margin: 30px 40% 30px 0px;
+    border: 2px solid var(--white);
+}
+
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    margin: 0rem 1rem;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+.menuend > li {
+    display: inline-block;
+    padding-right: 5px;
+    transition: all 0.5s ease-in;
+}
+
+.menuend > li:hover {
+    color: var(--dark-Gray);
+    transform: scale(1.04) rotate(360deg);
+}
+
+.social-copy {
+    display: block;
+}
+
+.social {
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.social > img {
+    padding-left: 10px;
+}
+
+.copy{
+    font-size: 0.8em;
+}
+
+footer p {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 0px;
+}
+
+.reference a {
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+.reference a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: bolder;
+    transform: scale(1.05);
+}
+
+@media (min-width: 1450px) {
+    header {
+        background-size: contain;
+    }
+
+    header > h1 {
+        margin: 10% 50% 10% 0%;
+    }
+
+    .menu {
+        font-size: 1.7em;
+    }
+
+    .end {
+        padding: 6rem;
+        margin: 0rem 4rem;
+    }
+
+    .menuend li {
+        font-size: 1.5em;
+    }
+
+    .copy, .reference {
+        color: green;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 910px) {
+    header > h1 {
+        margin: 5% 10% 5% 0%;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+    header {
+    background-image: url(imagens/hero-mobille.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+    height: 100vh;
+}
+
+.close-open{
+    display: flex;
+}
+
+.menu {
+    display: none;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 50% 30px;
+}
+
+.end {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin: 0px;
+}
+
+.menuend{
+    padding: 20px;
+    margin: 0px;
+}
+
+.menuend li {
+    display: block;
+    padding: 15px;
+    transition: all 0.5s ease-in;
+}
+
+.menuend li:hover {
+    transform: scale(1.04) rotate(360deg);
+}
+
+.social {
+    text-align: center;
+    margin: 0px;
+}
+
+.social img {
+    padding: 3px 5px;
+}
+
+}
+

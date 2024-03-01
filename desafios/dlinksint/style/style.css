@@ -1,0 +1,66 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'Bluu Next';
+    src: url(../fonts/BluuNext-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(../fonts/Comfortaa_Regular.ttf) format('truetype');
+}
+
+:root {
+    --cor01: #742CDB;
+    --cor02: #6A469C;
+    --cor03: #4C405C;
+    --cor04: #DBD62C;
+    --cor05: #868548;
+    --cor06: #33332C;
+    --font-destaque: 'Bluu Next', serif;
+    --font-padrao: 'Comfortaa', sans-serif;
+    --shadow: 5px 5px 5px #33332c66;
+}
+
+*{
+    font-family: var(--font-padrao);
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: var(--font-destaque);
+    margin: 0px;
+
+}
+
+h2 {
+    font-family: var(--font-destaque);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor02), var(--cor01));
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    text-align: center;
+    text-shadow: var(--shadow);
+}
+
+header {
+    
+}
+
+nav {
+    background-color: var(--cor02);
+    padding: 10px;
+    font-weight: bolder;
+}
+
+nav > a {
+    color: var(--cor04);
+    text-decoration: none;
+    padding: 5px;
+}
