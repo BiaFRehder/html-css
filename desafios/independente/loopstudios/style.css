@@ -148,9 +148,6 @@ footer p {
 }
 
 @media (min-width: 1450px) {
-    header {
-        background-size: cover;
-    }
 
     .menu {
         font-size: 1.7em;
@@ -172,13 +169,6 @@ footer p {
 }
 
 @media (max-width: 670px) {
-    header {
-    background-image: url(imagens/hero-mobille.jpg);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
 
 .close-open{
     display: flex;
