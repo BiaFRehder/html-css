@@ -24,10 +24,13 @@ body {
 }
 
 header {
+    position: relative;
     display: block;
     background-image: url(imagens/hero.jpg);
-    background-position: top;
+    background-position: center top;
     background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
     padding: 60px 50px;
     height: 100vh;
 }
@@ -61,6 +64,7 @@ header .menu > a:hover {
 }
 
 header h1 {
+    position: absolute;
     color: var(--white);
     font-weight: 300;
     font-size: 4em;
@@ -68,8 +72,11 @@ header h1 {
     text-align: left;
     text-transform: uppercase;
     padding: 30px 30px;
-    margin: 30px 40% 30px 0px;
+    margin-right: 40%;
     border: 2px solid var(--white);
+    left: 50px;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 
@@ -142,11 +149,7 @@ footer p {
 
 @media (min-width: 1450px) {
     header {
-        background-size: contain;
-    }
-
-    header > h1 {
-        margin: 10% 50% 10% 0%;
+        background-size: cover;
     }
 
     .menu {
@@ -168,21 +171,12 @@ footer p {
     }
 }
 
-@media (max-width: 910px) {
-    header > h1 {
-        margin: 5% 10% 5% 0%;
-    }
-
-}
-
-
 @media (max-width: 670px) {
     header {
     background-image: url(imagens/hero-mobille.jpg);
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    padding: 20px 40px;
     height: 100vh;
 }
 
@@ -196,7 +190,6 @@ footer p {
 
 header h1 {
     font-size: 2em;
-    margin: 50% 30px;
 }
 
 .end {
