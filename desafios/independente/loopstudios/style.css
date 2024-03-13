@@ -137,7 +137,7 @@ footer p {
 
 .reference a {
     display: inline-block;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s;
 }
 
 .reference a:hover {
